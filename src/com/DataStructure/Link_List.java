@@ -128,6 +128,31 @@ class Link_List {
         System.out.println("NULL");
     }
 
+//    public Node merge_two_list(Node l1, Node l2){
+//         Node dummy_node = new Node(0);
+//         Node tail = dummy_node;
+//         while (true){
+//             if (l1 == null){
+//                 tail.next = l2;
+//                 break;
+//             }
+//             if (l2 == null){
+//                 tail.next = l1;
+//                 break;
+//             }
+//             if (l1.data < l2.data){
+//                 tail.next = l1;
+//                 l1 = l1.next;
+//             }
+//             if (l2.data < l1.data){
+//                 tail.next = l2;
+//                 l2 = l2.next;
+//             }
+//             tail = tail.next;
+//         }
+//         return dummy_node.next;
+//    }
+
      public static void main (String[] args){
          Link_List list = new Link_List();
          list.addFirst("is");
