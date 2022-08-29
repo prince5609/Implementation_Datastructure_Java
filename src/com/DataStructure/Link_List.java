@@ -1,6 +1,6 @@
 package com.DataStructure;
 
-class Linked_List {
+class Link_List {
     Node head;
      class Node{
          String data;
@@ -129,7 +129,7 @@ class Linked_List {
     }
 
      public static void main (String[] args){
-         Linked_List list = new Linked_List();
+         Link_List list = new Link_List();
          list.addFirst("is");
          list.printList();
          list.addFirst("a");

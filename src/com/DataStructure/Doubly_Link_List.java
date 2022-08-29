@@ -1,6 +1,6 @@
 package com.DataStructure;
 
-class Doubly_Linked_List {
+class Doubly_Link_List {
     Node head;
     class Node{
         String data;
@@ -122,7 +122,7 @@ class Doubly_Linked_List {
     }
 
     public static void main(String [] args){
-        Doubly_Linked_List list = new Doubly_Linked_List();
+        Doubly_Link_List list = new Doubly_Link_List();
         list.add_first("Ram");
         list.print_list();
         list.add_last("a");
