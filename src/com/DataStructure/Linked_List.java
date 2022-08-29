@@ -11,8 +11,6 @@ class Linked_List {
              this.next = null;
          }
      }
-
-     //  ADD
     public void addFirst(String data){
          Node newNode = new Node(data);
          if(head == null){
