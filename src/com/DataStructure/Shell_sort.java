@@ -1,7 +1,7 @@
 package com.DataStructure;
 
 public class Shell_sort {
-    public static int[]  shell_sort(int[]arr){
+    public static void shell_sort(int[]arr){
         int n = arr.length;
         int gap = n / 2;
         while (gap > 0){
@@ -16,20 +16,19 @@ public class Shell_sort {
             }
             gap = gap / 2;
         }
-        return arr;
     }
 
     public static void main(String[] args){
         int []arr = {21, 38, 29, 17, 4, 25, 11, 32, 9};
         int [] arr1 = {1, 2, 3, 4, 5, -6};
         shell_sort(arr);
-        for (int i = 0; i < arr.length;i++){
-            System.out.print(arr[i] + " ");
+        for (int i : arr) {
+            System.out.print(i + " ");
         }
         System.out.println();
         shell_sort(arr1);
-        for (int i = 0; i < arr1.length;i++){
-            System.out.print(arr1[i] + " ");
+        for (int j : arr1) {
+            System.out.print(j + " ");
         }
     }
 }
