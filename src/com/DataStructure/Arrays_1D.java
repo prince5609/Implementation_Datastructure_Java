@@ -8,8 +8,8 @@ public class Arrays_1D{
             a1[i] = num;
             num = num + 2;
         }
-        for (int j = 0; j < a1.length; j++){
-            System.out.print(a1[j] + " ");
+        for (int i : a1) {
+            System.out.print(i + " ");
         }
 
     }
