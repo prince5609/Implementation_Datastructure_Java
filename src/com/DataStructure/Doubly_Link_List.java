@@ -2,7 +2,7 @@ package com.DataStructure;
 
 class Doubly_Link_List {
     Node head;
-    class Node{
+    static class Node{
         String data;
         Node next;
         Node prev;
