@@ -1,13 +1,13 @@
 package com.DataStructure;
 
 public class Merge_Sort {
-    public static void divide(int []arr , int si, int ei){
+    public static void merge_sort(int []arr , int si, int ei){
         if (si >= ei){
             return;
         }
         int mid = si + (ei - si) / 2;
-        divide(arr, si, mid);
-        divide(arr, mid + 1, ei);
+        merge_sort(arr, si, mid);
+        merge_sort(arr, mid + 1, ei);
         merge(arr, si, mid, ei);
     }
 
@@ -37,17 +37,17 @@ public class Merge_Sort {
             x++;
         }
         int j = si;
-        for (int i = 0; i < merged.length; i++){
-            arr[j] = merged[i];
+        for (int i : merged) {
+            arr[j] = i;
             j++;
         }
     }
 
     public static void main(String[]args){
         int [] arr = {6, 3, 9, 5, 2, 8};
-        divide(arr, 0, arr.length - 1);
-        for (int i = 0; i < arr.length; i++){
-            System.out.print(arr[i] + " ");
+        merge_sort(arr, 0, arr.length - 1);
+        for (int i : arr) {
+            System.out.print(i + " ");
         }
     }
 }
