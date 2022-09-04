@@ -1,7 +1,7 @@
 package com.DataStructure;
 
 public class Selection_Sort {
-    public static int[] selection_sort(int[]arr){
+    public static void selection_sort(int[]arr){
         for (int i = 0; i < arr.length; i++){
             int smallest = arr[i];
             int smallest_index = i;
@@ -15,7 +15,6 @@ public class Selection_Sort {
             }
             swap (arr, smallest_index, i);
         }
-        return arr;
     }
 
     public static void swap(int[]arr, int a, int b){
@@ -28,8 +27,8 @@ public class Selection_Sort {
     public static void main(String[] args){
         int[] arr = {55, 33, 9, 41, 6, 1, 7, 2, 5, 879, 5, 5, 4, 85, 5646, 2585, 5564};
         selection_sort(arr);
-        for (int i = 0; i < arr.length; i++){
-            System.out.print(arr[i] + " ");
+        for (int i : arr) {
+            System.out.print(i + " ");
         }
     }
 }
