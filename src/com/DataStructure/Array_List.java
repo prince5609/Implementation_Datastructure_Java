@@ -4,7 +4,7 @@ import java.util.Collections;
 
 public class Array_List {
     public static void main (String[]args){
-        ArrayList<Integer> list = new ArrayList<Integer>();
+        ArrayList<Integer> list = new ArrayList<>();
         // ADD
 
         list.add(5);  // Here 5 is value
@@ -15,7 +15,7 @@ public class Array_List {
 
         // GET
 
-        int element = list.get(1);  // Here 1 is index
+        int element = list.get(1);  // Here 1 is indexed
         System.out.println(element);
 
         // ADD IN BETWEEN
@@ -39,8 +39,8 @@ public class Array_List {
 
         // PRINT BY LOOPS
 
-        for (int i = 0; i < list.size();i++){
-            System.out.print(list.get(i));
+        for (Integer i : list) {
+            System.out.print(i);
         }
         System.out.println();
 
