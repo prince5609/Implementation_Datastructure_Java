@@ -2,7 +2,7 @@ package com.DataStructure;
 
 class Link_List {
     Node head;
-     class Node{
+      static class Node{
          String data;
          Node next;
 
@@ -94,12 +94,12 @@ class Link_List {
     }
 
     public void add_list(String[] arr){
-         for (int i = 0; i < arr.length; i++){
-             addLast(arr[i]);
-         }
+        for (String s : arr) {
+            addLast(s);
+        }
     }
 
-    public Node reverse_list(){
+    public void reverse_list(){
         Node prev = null;
         Node iterate = head;
         while (iterate != null){
@@ -109,7 +109,6 @@ class Link_List {
             iterate = nxt;
         }
         head = prev;
-        return head;
      }
 
 
