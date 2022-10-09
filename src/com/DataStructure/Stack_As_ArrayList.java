@@ -15,7 +15,7 @@ public class Stack_As_ArrayList {
         }
 
         public static void pop() {
-            list.remove(list.size() - 1);
+            list.remove(0);
         }
 
         public static int peek(){
